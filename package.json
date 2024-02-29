@@ -1,0 +1,50 @@
+{
+  "name": "@jwkongkong/kktools",
+  "version": "1.0.4",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ],
+    "plugins": []
+  },
+  "description": "common tools.",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwkongkong/kktools"
+  },
+  "keywords": [
+    "common",
+    "tools"
+  ],
+  "author": "jwkongkong",
+  "license": "ISC",
+  "dependencies": {
+    "@phosphor-icons/react": "^2.0.15"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "tailwindcss": "^3.2.4"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist --extensions \".js,.jsx\" --copy-files"
+  }
+}
